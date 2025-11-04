@@ -115,11 +115,11 @@ const OrganizeData = {
           <div className='w-full gap-6 md:gap-[40px] flex flex-col lg:flex-row justify-between items-start'>
             <div className='w-full lg:w-[48%]'>
               <Label title="Welcome to Legacy of Love Dog Hub" />
-              <div className='space-y-4 md:space-y-6 mt-4'>
-                <p className='font-normal text-[15px] md:text-[16px] font-sans leading-[150%]'>
+              <div className='mt-2 leading-tightly'>
+                <p className='font-normal text-[15px] md:text-[16px] font-sans'>
                   Exclusively available to Elite Pack members, the Legacy of Love Living Hub is nothing like you've seen before! Imagine a dynamic, AI-powered sanctuary where every cherished memory and vital detail about your companion's life is held with care, easily accessible anytime, anywhere. This isn't just a digital journal — Mr. White is your personal assistant, your memory keeper, even an aid to custom publishing your dogs life in book form and your partner in ensuring your dog enjoys a long, healthy, joyful life.
                 </p>
-                <p className='font-normal text-[15px] md:text-[16px] font-sans leading-[150%]'>
+                <p className='font-normal text-[15px] md:text-[16px] font-sans'>
                   With the Legacy of Love Living Hub, you'll discover a new level of ease and confidence in managing your pup's health, milestones, and adventures — all wrapped in a space designed to grow with you and your dog. Feel proud knowing that support and awareness are available 24/7, helping you make informed decisions and celebrate every step of your journey together.
                 </p>
               </div>
@@ -201,9 +201,9 @@ const OrganizeData = {
 
           {/* Key Areas Organized by Mr. White - First Section */}
           <div className="flex flex-col lg:flex-row items-start justify-between gap-8 md:gap-[32px]">
-            <div className="flex flex-col w-full lg:w-[60%] gap-6 md:gap-[32px]">
-              <Label title="Key Areas Organized by Mr. White" />
-              <div className="flex flex-col w-full items-start space-y-6 md:space-y-8">
+            <div className="flex flex-col w-full lg:w-[60%] gap-[16px] md:gap-[32px]">
+              <Label title="Key Areas Organized by Mr. White"/>
+              <div className="flex flex-col w-full items-start gap-[8px]">
                 {OrganizeData.DataA.map((paragraph, index) => (
                   <div className="w-full space-y-3" key={index}>
                     <Paragraph title={paragraph.title} para={paragraph.para} />

@@ -29,7 +29,7 @@ const AuthModal = ({ isOpen, onClose }) => {
   };
   
   const handleLogin = () => {
-    router.push('/book');
+    router.push('/userInterface');
     
   }
   
