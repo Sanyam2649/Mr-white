@@ -7,7 +7,7 @@ import Card from '@/components/card';
 import Image from 'next/image';
 import vector from '@/public/Vector.svg';
 import Logo from '@/components/logo';
-import Subscription from './subscription/page';
+import Subscription from '@/components/subscription';
 import Partner from '@/components/partner';
 import ContactButton from '@/components/contactButton';
 import { useRouter } from 'next/navigation';
