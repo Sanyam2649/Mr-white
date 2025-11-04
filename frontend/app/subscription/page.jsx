@@ -51,19 +51,7 @@ const handleLoginClick = () => {
       desc: 'Step into your personal portal with Mr. White, where tailored guidance, records, and wisdom for you and your dog are available 24/7.',
     },
   ].map(({ step, title, desc }) => (
-    <div
-      key={step}
-      className='flex flex-row w-[432px] h-full px-[24px] py-[20px] gap-[24px] bg-[#FFFFFF1A]'
-    >
-      <div className='size-[40px] gap-[8px] items-center rounded-[500px] bg-[#D3B86A]'>
-        <p className='text-center text-black text-[24px]'>{step}</p>
-      </div>
-      <div className='flex flex-col h-[127px] gap-[8px]'>
-        <p className='text-[20px] font-semibold text-[#FFFFFF]'>
-           {title}</p>
-        <p className='text-[16px] leading-tight'>{desc}</p>
-      </div>
-    </div>
+    <LabelContainer step={step} title={title} desc={desc} key={step}/>
   ))}
 </div>
 
@@ -99,6 +87,22 @@ const handleLoginClick = () => {
       />
        </div>
   )
+}
+
+const LabelContainer = ({step, title , desc}) => {
+  return(
+  <div className="flex items-center gap-[24px] bg-[#FFFFFF1A] rounded-sm px-4 py-4 transform-none">
+    <div className="flex-shrink-0 h-[32px] w-[32px] md:h-[40px] md:w-[40px] text-black bg-[#D3B86A] rounded-full flex items-center justify-center text-[20px] md:text-[24px] font-semibold font-work-sans">
+      {step}
+    </div>
+    <div className="flex-1 flex flex-col">
+      <h3 className="text-[20px] font-semibold font-work-sans">
+        {title}</h3>
+      <p className="text-[16px] text-justify font-light font-public-sans tracking-tighter">
+        {desc}
+       </p>
+    </div>
+  </div>)
 }
 
 export default SubscriptionPage;

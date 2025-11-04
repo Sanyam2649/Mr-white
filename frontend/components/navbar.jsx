@@ -94,7 +94,7 @@ const isMoreActive = moreMenuItems.some(item =>
                 </Link>
               ))}
               
-              <div class="relative">
+              <div className="relative">
               <button
   className={`font-semibold text-[18px] lg:text-[20px] flex items-center cursor-pointer gap-1 hover:scale-105 transition-all duration-300 transform-gpu origin-center ${
     isMoreActive ? "text-[#D3B86A]" : "text-white"
